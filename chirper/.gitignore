@@ -2,3 +2,5 @@ node_modules
 private.key
 private.heroku.key
 .env
+chirper.key
+package-lock.json

@@ -17,7 +17,7 @@ const nexmo = new Nexmo({
   apiKey: config.NEXMO_API_KEY,
   apiSecret: config.NEXMO_API_SECRET,
   applicationId: config.NEXMO_APP_ID,
-  privateKey: './private.key'
+  privateKey: './chirper.key'
 }, { debug: true });
 
 const nexmoHelper = new NexmoHelper(bot, nexmo, config);
