@@ -19,15 +19,12 @@ const HELP_MSG = `
 I presently only support otp calling for 2fa authentication bypass. You can create a otp call by using the /call command and listing the phone numbers of the victims you'd like to get otp from. 
 For example,
 
-- /call otp 14155550123 14155550456 would call both of those numbers for otp and acquire the otp code from there dtmf input.
-
-I'll support more functionality in the future. Checkout my project on https://chirperotp.com and take a look at the issues to see what's planned. Please do get involved.`;
+- /call otp 14155550123 14155550456 would call both of those numbers for otp and acquire the otp code from there dtmf input.`;
 
 class NexmoHelper {
   constructor(bot, nexmo, config) {
     this.supportedIntents = {
       'otp': this._conferenceIntent,
-      'conf': this._conferenceIntent,
       'help': this._helpIntent,
     };
 
